@@ -1,0 +1,35 @@
+---
+import {
+    TWITTER_ACCOUNT_URL,
+    DISCORD_ACCOUNT_URL,
+    GITHUB_ACCOUNT_URL,
+    LINKEDIN_ACCOUNT_URL
+} from "../consts";
+
+import TwitterIcon from "../icons/TwitterX.astro";
+import DiscordIcon from "../icons/Discord.astro";
+import GithubIcon from "../icons/Github.astro";
+import LinkedinIcon from "../icons/Linkedin.astro";
+import Link from "./Link.astro";
+---
+
+<footer
+    class="bg-secondary-light dark:bg-secondary-dark h-80 md:gap-5 gap-2 flex md:flex-row flex-col justify-around items-center px-20 border-t-4 border-terciary-light dark:border-terciary-dark"
+>
+    <section class="flex flex-col gap-8">
+        <h2 class="font-bold text-2xl text-center">
+            Portafolio de <span class="text-purple-600">MrMikeDev</span>
+        </h2>
+        <span class="text-center">&copy; Derechos reservados - 2023</span>
+    </section>
+
+    <section class="flex flex-col gap-8">
+        <h3 class="font-bold text-2xl text-center">Mis redes:</h3>
+        <ul class="flex justify-center items-center gap-2.5">
+            <Link href={TWITTER_ACCOUNT_URL} icon={TwitterIcon} />
+            <Link href={DISCORD_ACCOUNT_URL} icon={DiscordIcon} />
+            <Link href={GITHUB_ACCOUNT_URL} icon={GithubIcon} />
+            <Link href={LINKEDIN_ACCOUNT_URL} icon={LinkedinIcon} />
+        </ul>
+    </section>
+</footer>

@@ -1,0 +1,35 @@
+---
+import { FULL_NAME, AGE } from "../consts";
+---
+
+<picture
+    id="home"
+    class="flex md:flex-row flex-col justify-center items-center md:gap-24 gap-5"
+>
+    <img
+        class="lg:w-96 lg:h-96 w-72 h-72 rounded-full"
+        src="/MrMikeDev.webp"
+        alt="MrMikeDev picture by @Mr.Neska"
+        draggable="false"
+    />
+    <section class="flex flex-col gap-5">
+        <h1 class="font-bold md:text-7xl text-6xl text-center">MrMikeDev</h1>
+        <p class="md:text-2xl text-xl text-center">
+            Desarrollador web <span
+                class="text-purple-600 underline decoration-purple-600"
+                >frontend</span
+            >.
+        </p>
+    </section>
+</picture>
+<section class="flex flex-col gap-5">
+    <p
+        class="md:text-2xl text-xl text-center md:max-w-[800px] max-w-[400px] px-5 mx-auto"
+    >
+        Soy <span class="font-bold">{FULL_NAME}</span> un desarrollador web
+        frontend de tan solo <span class="font-bold">{AGE}</span> años, que le
+        encanta aprender cosas nuevas y compartir sus conocimientos con los
+        demás.
+    </p>
+</section>
+</section>

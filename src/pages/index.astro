@@ -1,0 +1,13 @@
+---
+import Main from "../layouts/Main.astro";
+import Inicio from "../sections/Inicio.astro";
+import Skills from "../sections/Skills.astro";
+import Separator from "../components/Separator.astro";
+import { TITLE_PAGE } from "../consts";
+---
+
+<Main title={`${TITLE_PAGE} | Inicio`}>
+    <Inicio />
+    <Separator />
+    <Skills />
+</Main>

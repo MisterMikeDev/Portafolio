@@ -1,0 +1,28 @@
+---
+import ButtonTheme from "./ButtonTheme";
+import NavbarLink from "./NavbarLink.astro";
+---
+
+<header
+    id="main-header"
+    class="flex justify-around items-center bg-secondary-light dark:bg-secondary-dark h-24 sticky top-0 z-10 border-b-4 border-terciary-light dark:border-terciary-dark"
+>
+    <img draggable="false" src="/favicon.webp" alt="MrMikeDev's logo" />
+    <ul
+        class="flex flex-row justify-center items-center md:gap-5 gap-1.5 font-bold"
+    >
+        <li>
+            <NavbarLink href="#home" text="Inicio" />
+        </li>
+        <li>
+            <NavbarLink href="#skills" text="Skills" />
+        </li>
+        <li>
+            <NavbarLink href="#projects" text="Proyectos" />
+        </li>
+        <li>
+            <NavbarLink href="#contact" text="Contacto" />
+        </li>
+        <ButtonTheme transition:persist client:only />
+    </ul>
+</header>

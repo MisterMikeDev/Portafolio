@@ -1,0 +1,35 @@
+---
+import { ViewTransitions } from "astro:transitions";
+import {
+    AUTHOR_PAGE,
+    DESCRIPTION_PAGE,
+    KEYWORDS_PAGE,
+    TITLE_PAGE,
+    GITHUB_ACCOUNT_URL,
+    TWITTER_ACCOUNT_URL
+} from "../consts";
+---
+
+<meta charset="utf-8" />
+<link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;600;700&display=swap"
+/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" type="image/svg+xml" href="/favicon.webp" />
+<meta name="description" content={`${DESCRIPTION_PAGE}`} />
+<meta name="author" content={`${AUTHOR_PAGE}`} />
+<meta name="keywords" content={`${KEYWORDS_PAGE}`} />
+<meta name="twitter:creator" content={`${TWITTER_ACCOUNT_URL}`} />
+<meta name="twitter:site" content={`${TWITTER_ACCOUNT_URL}`} />
+<meta name="twitter:card" content="summary" />
+<meta property="og:title" content={`${TITLE_PAGE}`} />
+<meta property="og:description" content={`${DESCRIPTION_PAGE}`} />
+<meta property="og:type" content="website" />
+<meta property="og:url" content={`${TWITTER_ACCOUNT_URL}`} />
+<meta property="og:image" content="URL_DE_LA_IMAGEN" />
+<meta property="og:site_name" content={`${TITLE_PAGE}`} />
+<meta property="og:locale" content="es_ES" />
+<meta name="github" content={`${GITHUB_ACCOUNT_URL}`} />
+<link rel="canonical" href={`${TWITTER_ACCOUNT_URL}`} />
+<ViewTransitions />
